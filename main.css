@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #050404 16.62%, #2b0301 85.61%);
+}
+
+ img.flutuar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    margin:2rem 2rem;
+    border-radius: 5px;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+ img.flutuar::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0CF;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+}
+ img.flutuar:hover{
+    transform: scale(1.07,1.07);
+}
+ img.flutuar:hover::after{
+    opacity: 0;
+}
+
+img#home {
+    width: 80px;
+}
+
+img#icon-camisa {
+    width: 80px;
+}
+
+img#icon-moletom {
+    width: 80px;
+}
+
+img#icon-touca {
+    width: 80px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
